@@ -15,56 +15,7 @@
 │       ├── mysql
 │       │   ├── aria_log.00000001
 │       │   ├── aria_log_control
-│       │   ├── ctfd
-│       │   │   ├── alembic_version.frm
-│       │   │   ├── alembic_version.ibd
-│       │   │   ├── awards.frm
-│       │   │   ├── awards.ibd
-│       │   │   ├── brackets.frm
-│       │   │   ├── brackets.ibd
-│       │   │   ├── challenges.frm
-│       │   │   ├── challenges.ibd
-│       │   │   ├── challenge_topics.frm
-│       │   │   ├── challenge_topics.ibd
-│       │   │   ├── comments.frm
-│       │   │   ├── comments.ibd
-│       │   │   ├── config.frm
-│       │   │   ├── config.ibd
-│       │   │   ├── db.opt
-│       │   │   ├── dynamic_challenge.frm
-│       │   │   ├── dynamic_challenge.ibd
-│       │   │   ├── field_entries.frm
-│       │   │   ├── field_entries.ibd
-│       │   │   ├── fields.frm
-│       │   │   ├── fields.ibd
-│       │   │   ├── files.frm
-│       │   │   ├── files.ibd
-│       │   │   ├── flags.frm
-│       │   │   ├── flags.ibd
-│       │   │   ├── hints.frm
-│       │   │   ├── hints.ibd
-│       │   │   ├── notifications.frm
-│       │   │   ├── notifications.ibd
-│       │   │   ├── pages.frm
-│       │   │   ├── pages.ibd
-│       │   │   ├── solves.frm
-│       │   │   ├── solves.ibd
-│       │   │   ├── submissions.frm
-│       │   │   ├── submissions.ibd
-│       │   │   ├── tags.frm
-│       │   │   ├── tags.ibd
-│       │   │   ├── teams.frm
-│       │   │   ├── teams.ibd
-│       │   │   ├── tokens.frm
-│       │   │   ├── tokens.ibd
-│       │   │   ├── topics.frm
-│       │   │   ├── topics.ibd
-│       │   │   ├── tracking.frm
-│       │   │   ├── tracking.ibd
-│       │   │   ├── unlocks.frm
-│       │   │   ├── unlocks.ibd
-│       │   │   ├── users.frm
-│       │   │   └── users.ibd
+│       │   ├── ctfd  [error opening dir]
 │       │   ├── ddl_recovery-backup.log
 │       │   ├── ddl_recovery.log
 │       │   ├── ib_buffer_pool
@@ -73,205 +24,46 @@
 │       │   ├── ibtmp1
 │       │   ├── multi-master.info
 │       │   ├── .my-healthcheck.cnf
-│       │   ├── mysql
-│       │   │   ├── columns_priv.frm
-│       │   │   ├── columns_priv.MAD
-│       │   │   ├── columns_priv.MAI
-│       │   │   ├── column_stats.frm
-│       │   │   ├── column_stats.MAD
-│       │   │   ├── column_stats.MAI
-│       │   │   ├── db.frm
-│       │   │   ├── db.MAD
-│       │   │   ├── db.MAI
-│       │   │   ├── db.opt
-│       │   │   ├── event.frm
-│       │   │   ├── event.MAD
-│       │   │   ├── event.MAI
-│       │   │   ├── func.frm
-│       │   │   ├── func.MAD
-│       │   │   ├── func.MAI
-│       │   │   ├── general_log.CSM
-│       │   │   ├── general_log.CSV
-│       │   │   ├── general_log.frm
-│       │   │   ├── global_priv.frm
-│       │   │   ├── global_priv.MAD
-│       │   │   ├── global_priv.MAI
-│       │   │   ├── gtid_slave_pos.frm
-│       │   │   ├── gtid_slave_pos.ibd
-│       │   │   ├── help_category.frm
-│       │   │   ├── help_category.MAD
-│       │   │   ├── help_category.MAI
-│       │   │   ├── help_keyword.frm
-│       │   │   ├── help_keyword.MAD
-│       │   │   ├── help_keyword.MAI
-│       │   │   ├── help_relation.frm
-│       │   │   ├── help_relation.MAD
-│       │   │   ├── help_relation.MAI
-│       │   │   ├── help_topic.frm
-│       │   │   ├── help_topic.MAD
-│       │   │   ├── help_topic.MAI
-│       │   │   ├── index_stats.frm
-│       │   │   ├── index_stats.MAD
-│       │   │   ├── index_stats.MAI
-│       │   │   ├── innodb_index_stats.frm
-│       │   │   ├── innodb_index_stats.ibd
-│       │   │   ├── innodb_table_stats.frm
-│       │   │   ├── innodb_table_stats.ibd
-│       │   │   ├── plugin.frm
-│       │   │   ├── plugin.MAD
-│       │   │   ├── plugin.MAI
-│       │   │   ├── proc.frm
-│       │   │   ├── proc.MAD
-│       │   │   ├── proc.MAI
-│       │   │   ├── procs_priv.frm
-│       │   │   ├── procs_priv.MAD
-│       │   │   ├── procs_priv.MAI
-│       │   │   ├── proxies_priv.frm
-│       │   │   ├── proxies_priv.MAD
-│       │   │   ├── proxies_priv.MAI
-│       │   │   ├── roles_mapping.frm
-│       │   │   ├── roles_mapping.MAD
-│       │   │   ├── roles_mapping.MAI
-│       │   │   ├── servers.frm
-│       │   │   ├── servers.MAD
-│       │   │   ├── servers.MAI
-│       │   │   ├── slow_log.CSM
-│       │   │   ├── slow_log.CSV
-│       │   │   ├── slow_log.frm
-│       │   │   ├── tables_priv.frm
-│       │   │   ├── tables_priv.MAD
-│       │   │   ├── tables_priv.MAI
-│       │   │   ├── table_stats.frm
-│       │   │   ├── table_stats.MAD
-│       │   │   ├── table_stats.MAI
-│       │   │   ├── time_zone.frm
-│       │   │   ├── time_zone_leap_second.frm
-│       │   │   ├── time_zone_leap_second.MAD
-│       │   │   ├── time_zone_leap_second.MAI
-│       │   │   ├── time_zone.MAD
-│       │   │   ├── time_zone.MAI
-│       │   │   ├── time_zone_name.frm
-│       │   │   ├── time_zone_name.MAD
-│       │   │   ├── time_zone_name.MAI
-│       │   │   ├── time_zone_transition.frm
-│       │   │   ├── time_zone_transition.MAD
-│       │   │   ├── time_zone_transition.MAI
-│       │   │   ├── time_zone_transition_type.frm
-│       │   │   ├── time_zone_transition_type.MAD
-│       │   │   ├── time_zone_transition_type.MAI
-│       │   │   ├── transaction_registry.frm
-│       │   │   ├── transaction_registry.ibd
-│       │   │   └── user.frm
+│       │   ├── mysql  [error opening dir]
 │       │   ├── mysql_upgrade_info
-│       │   ├── performance_schema
-│       │   │   └── db.opt
-│       │   └── sys
-│       │       ├── db.opt
-│       │       ├── host_summary_by_file_io.frm
-│       │       ├── host_summary_by_file_io_type.frm
-│       │       ├── host_summary_by_stages.frm
-│       │       ├── host_summary_by_statement_latency.frm
-│       │       ├── host_summary_by_statement_type.frm
-│       │       ├── host_summary.frm
-│       │       ├── innodb_buffer_stats_by_schema.frm
-│       │       ├── innodb_buffer_stats_by_table.frm
-│       │       ├── innodb_lock_waits.frm
-│       │       ├── io_by_thread_by_latency.frm
-│       │       ├── io_global_by_file_by_bytes.frm
-│       │       ├── io_global_by_file_by_latency.frm
-│       │       ├── io_global_by_wait_by_bytes.frm
-│       │       ├── io_global_by_wait_by_latency.frm
-│       │       ├── latest_file_io.frm
-│       │       ├── memory_by_host_by_current_bytes.frm
-│       │       ├── memory_by_thread_by_current_bytes.frm
-│       │       ├── memory_by_user_by_current_bytes.frm
-│       │       ├── memory_global_by_current_bytes.frm
-│       │       ├── memory_global_total.frm
-│       │       ├── metrics.frm
-│       │       ├── processlist.frm
-│       │       ├── ps_check_lost_instrumentation.frm
-│       │       ├── schema_auto_increment_columns.frm
-│       │       ├── schema_index_statistics.frm
-│       │       ├── schema_object_overview.frm
-│       │       ├── schema_redundant_indexes.frm
-│       │       ├── schema_table_lock_waits.frm
-│       │       ├── schema_table_statistics.frm
-│       │       ├── schema_table_statistics_with_buffer.frm
-│       │       ├── schema_tables_with_full_table_scans.frm
-│       │       ├── schema_unused_indexes.frm
-│       │       ├── session.frm
-│       │       ├── session_ssl_status.frm
-│       │       ├── statement_analysis.frm
-│       │       ├── statements_with_errors_or_warnings.frm
-│       │       ├── statements_with_full_table_scans.frm
-│       │       ├── statements_with_runtimes_in_95th_percentile.frm
-│       │       ├── statements_with_sorting.frm
-│       │       ├── statements_with_temp_tables.frm
-│       │       ├── sys_config.frm
-│       │       ├── sys_config.MAD
-│       │       ├── sys_config.MAI
-│       │       ├── user_summary_by_file_io.frm
-│       │       ├── user_summary_by_file_io_type.frm
-│       │       ├── user_summary_by_stages.frm
-│       │       ├── user_summary_by_statement_latency.frm
-│       │       ├── user_summary_by_statement_type.frm
-│       │       ├── user_summary.frm
-│       │       ├── version.frm
-│       │       ├── wait_classes_global_by_avg_latency.frm
-│       │       ├── wait_classes_global_by_latency.frm
-│       │       ├── waits_by_host_by_latency.frm
-│       │       ├── waits_by_user_by_latency.frm
-│       │       ├── waits_global_by_latency.frm
-│       │       ├── x@0024host_summary_by_file_io.frm
-│       │       ├── x@0024host_summary_by_file_io_type.frm
-│       │       ├── x@0024host_summary_by_stages.frm
-│       │       ├── x@0024host_summary_by_statement_latency.frm
-│       │       ├── x@0024host_summary_by_statement_type.frm
-│       │       ├── x@0024host_summary.frm
-│       │       ├── x@0024innodb_buffer_stats_by_schema.frm
-│       │       ├── x@0024innodb_buffer_stats_by_table.frm
-│       │       ├── x@0024innodb_lock_waits.frm
-│       │       ├── x@0024io_by_thread_by_latency.frm
-│       │       ├── x@0024io_global_by_file_by_bytes.frm
-│       │       ├── x@0024io_global_by_file_by_latency.frm
-│       │       ├── x@0024io_global_by_wait_by_bytes.frm
-│       │       ├── x@0024io_global_by_wait_by_latency.frm
-│       │       ├── x@0024latest_file_io.frm
-│       │       ├── x@0024memory_by_host_by_current_bytes.frm
-│       │       ├── x@0024memory_by_thread_by_current_bytes.frm
-│       │       ├── x@0024memory_by_user_by_current_bytes.frm
-│       │       ├── x@0024memory_global_by_current_bytes.frm
-│       │       ├── x@0024memory_global_total.frm
-│       │       ├── x@0024processlist.frm
-│       │       ├── x@0024ps_digest_95th_percentile_by_avg_us.frm
-│       │       ├── x@0024ps_digest_avg_latency_distribution.frm
-│       │       ├── x@0024ps_schema_table_statistics_io.frm
-│       │       ├── x@0024schema_flattened_keys.frm
-│       │       ├── x@0024schema_index_statistics.frm
-│       │       ├── x@0024schema_table_lock_waits.frm
-│       │       ├── x@0024schema_table_statistics.frm
-│       │       ├── x@0024schema_table_statistics_with_buffer.frm
-│       │       ├── x@0024schema_tables_with_full_table_scans.frm
-│       │       ├── x@0024session.frm
-│       │       ├── x@0024statement_analysis.frm
-│       │       ├── x@0024statements_with_errors_or_warnings.frm
-│       │       ├── x@0024statements_with_full_table_scans.frm
-│       │       ├── x@0024statements_with_runtimes_in_95th_percentile.frm
-│       │       ├── x@0024statements_with_sorting.frm
-│       │       ├── x@0024statements_with_temp_tables.frm
-│       │       ├── x@0024user_summary_by_file_io.frm
-│       │       ├── x@0024user_summary_by_file_io_type.frm
-│       │       ├── x@0024user_summary_by_stages.frm
-│       │       ├── x@0024user_summary_by_statement_latency.frm
-│       │       ├── x@0024user_summary_by_statement_type.frm
-│       │       ├── x@0024user_summary.frm
-│       │       ├── x@0024wait_classes_global_by_avg_latency.frm
-│       │       ├── x@0024wait_classes_global_by_latency.frm
-│       │       ├── x@0024waits_by_host_by_latency.frm
-│       │       ├── x@0024waits_by_user_by_latency.frm
-│       │       └── x@0024waits_global_by_latency.frm
+│       │   ├── performance_schema  [error opening dir]
+│       │   └── sys  [error opening dir]
 │       └── redis
 │           └── dump.rdb
+├── .bash_history
+├── .bash_logout
+├── .bashrc
+├── conf
+│   └── nginx
+│       └── http.conf
+├── .config
+│   ├── autostart
+│   │   └── lxqt-config-monitor-autostart.desktop
+│   ├── gtk-3.0
+│   │   ├── im-multipress.conf
+│   │   └── settings.ini
+│   ├── lxqt
+│   │   ├── filedialog.conf
+│   │   ├── globalkeyshortcuts.conf
+│   │   ├── lxqt.conf
+│   │   ├── lxqt-config-monitor.conf
+│   │   ├── lxqt-powermanagement.conf
+│   │   ├── lxqt-runner.conf
+│   │   ├── notifications.conf
+│   │   ├── panel.conf
+│   │   ├── power.conf
+│   │   └── session.conf
+│   ├── pcmanfm-qt
+│   │   └── lxqt
+│   │       ├── recent-files.conf
+│   │       ├── settings.conf
+│   │       └── settings.conf.lock
+│   ├── pulse
+│   │   └── cookie
+│   ├── qterminal.org
+│   │   └── qterminal.ini
+│   ├── user-dirs.dirs
+│   └── user-dirs.locale
 ├── ctf-alt-config
 │   ├── conf
 │   │   └── nginx
@@ -330,11 +122,9 @@
 │   │   │   ├── aria_log.00000001
 │   │   │   ├── aria_log_control
 │   │   │   ├── ctfd  [error opening dir]
-│   │   │   ├── ddl_recovery.log
 │   │   │   ├── ib_buffer_pool
 │   │   │   ├── ibdata1
 │   │   │   ├── ib_logfile0
-│   │   │   ├── ibtmp1
 │   │   │   ├── multi-master.info
 │   │   │   ├── .my-healthcheck.cnf
 │   │   │   ├── mysql  [error opening dir]
@@ -361,9 +151,11 @@
 │   │   ├── aria_log_control
 │   │   ├── ctfd  [error opening dir]
 │   │   ├── ddl_recovery-backup.log
+│   │   ├── ddl_recovery.log
 │   │   ├── ib_buffer_pool
 │   │   ├── ibdata1
 │   │   ├── ib_logfile0
+│   │   ├── ibtmp1
 │   │   ├── multi-master.info
 │   │   ├── .my-healthcheck.cnf
 │   │   ├── mysql  [error opening dir]
@@ -372,7 +164,478 @@
 │   │   └── sys  [error opening dir]
 │   └── redis
 │       └── dump.rdb
+├── Desktop
+│   ├── computer.desktop
+│   ├── lubuntu-manual.desktop
+│   ├── network.desktop
+│   ├── trash-can.desktop
+│   └── user-home.desktop
 ├── docker-entrypoint.sh
-└── output.txt
+├── Documents
+├── Downloads
+│   └── BucHead.jpg
+├── .gitconfig
+├── .lesshst
+├── .local
+│   ├── share
+│   │   ├── applications
+│   │   ├── flatpak
+│   │   │   └── db
+│   │   ├── gvfs-metadata
+│   │   │   ├── home
+│   │   │   └── home-21c11a4e.log
+│   │   ├── keyrings
+│   │   │   ├── login.keyring
+│   │   │   └── user.keystore
+│   │   ├── nano
+│   │   │   └── search_history
+│   │   └── sddm
+│   │       └── xorg-session.log
+│   └── state
+│       └── wireplumber
+│           └── restore-stream
+├── Music
+├── output.txt
+├── Pictures
+├── .profile
+├── Public
+├── rbrctf-admin
+│   ├── backups
+│   │   ├── digitalforensics
+│   │   │   ├── conf
+│   │   │   │   └── nginx
+│   │   │   │       └── http-alt.conf
+│   │   │   ├── .data
+│   │   │   │   ├── CTFd-alt
+│   │   │   │   │   ├── logs
+│   │   │   │   │   │   ├── logins.log
+│   │   │   │   │   │   ├── registrations.log
+│   │   │   │   │   │   └── submissions.log
+│   │   │   │   │   └── uploads
+│   │   │   │   │       ├── 1045b1be7a0cde5988d53841f1221da2
+│   │   │   │   │       │   └── Buc.png
+│   │   │   │   │       ├── 27798ade094ea55706592dbba128ec62
+│   │   │   │   │       │   └── BucHead.jpg
+│   │   │   │   │       ├── 4a3768595238d7f63d2bd88892bef225
+│   │   │   │   │       │   └── rbrbanner.png
+│   │   │   │   │       ├── edfb820d205bc5f225973cf2303cf86b
+│   │   │   │   │       │   └── Declaration_of_Independence.png
+│   │   │   │   │       ├── fc1494918215bdb91bdc039134755662
+│   │   │   │   │       │   └── Banner-Transparent.svg
+│   │   │   │   │       └── fe025d459ea823ba336d233cc36cce39
+│   │   │   │   │           └── Banner-Transparent.svg
+│   │   │   │   ├── mysql-alt
+│   │   │   │   │   └── mysql_upgrade_info
+│   │   │   │   └── redis-alt
+│   │   │   │       └── dump.rdb
+│   │   │   ├── docker-compose.yml
+│   │   │   ├── index.html
+│   │   │   └── RBR CTF.2025-04-02_14_08_50.zip
+│   │   └── rbr
+│   │       ├── conf
+│   │       │   └── nginx
+│   │       │       └── http.conf
+│   │       ├── .data
+│   │       │   ├── CTFd
+│   │       │   │   ├── logs
+│   │       │   │   │   ├── logins.log
+│   │       │   │   │   ├── registrations.log
+│   │       │   │   │   └── submissions.log
+│   │       │   │   └── uploads
+│   │       │   │       ├── 7b2060ae7d76ad35ec1f7b5eba2e234d
+│   │       │   │       │   └── Logo.svg
+│   │       │   │       └── a1020979994389e3718b3d0a8b059837
+│   │       │   │           └── BucHead.jpg
+│   │       │   ├── mysql
+│   │       │   │   └── mysql_upgrade_info
+│   │       │   └── redis
+│   │       │       └── dump.rdb
+│   │       ├── docker-compose.yaml
+│   │       ├── index.html
+│   │       └── RBR CTF.2025-04-01_13_26_02.zip
+│   └── TODO.md
+├── rbrctf-backup
+│   ├── accessible
+│   │   └── .data
+│   │       ├── CTFd
+│   │       │   ├── logs
+│   │       │   │   ├── logins.log
+│   │       │   │   ├── registrations.log
+│   │       │   │   └── submissions.log
+│   │       │   └── uploads
+│   │       │       ├── 7b2060ae7d76ad35ec1f7b5eba2e234d
+│   │       │       │   └── Logo.svg
+│   │       │       └── a1020979994389e3718b3d0a8b059837
+│   │       │           └── BucHead.jpg
+│   │       ├── CTFd-alt
+│   │       ├── mysql
+│   │       │   ├── aria_log.00000001
+│   │       │   ├── aria_log_control
+│   │       │   ├── ctfd
+│   │       │   │   ├── alembic_version.frm
+│   │       │   │   ├── alembic_version.ibd
+│   │       │   │   ├── awards.frm
+│   │       │   │   ├── awards.ibd
+│   │       │   │   ├── brackets.frm
+│   │       │   │   ├── brackets.ibd
+│   │       │   │   ├── challenges.frm
+│   │       │   │   ├── challenges.ibd
+│   │       │   │   ├── challenge_topics.frm
+│   │       │   │   ├── challenge_topics.ibd
+│   │       │   │   ├── comments.frm
+│   │       │   │   ├── comments.ibd
+│   │       │   │   ├── config.frm
+│   │       │   │   ├── config.ibd
+│   │       │   │   ├── db.opt
+│   │       │   │   ├── dynamic_challenge.frm
+│   │       │   │   ├── dynamic_challenge.ibd
+│   │       │   │   ├── field_entries.frm
+│   │       │   │   ├── field_entries.ibd
+│   │       │   │   ├── fields.frm
+│   │       │   │   ├── fields.ibd
+│   │       │   │   ├── files.frm
+│   │       │   │   ├── files.ibd
+│   │       │   │   ├── flags.frm
+│   │       │   │   ├── flags.ibd
+│   │       │   │   ├── hints.frm
+│   │       │   │   ├── hints.ibd
+│   │       │   │   ├── notifications.frm
+│   │       │   │   ├── notifications.ibd
+│   │       │   │   ├── pages.frm
+│   │       │   │   ├── pages.ibd
+│   │       │   │   ├── solves.frm
+│   │       │   │   ├── solves.ibd
+│   │       │   │   ├── submissions.frm
+│   │       │   │   ├── submissions.ibd
+│   │       │   │   ├── tags.frm
+│   │       │   │   ├── tags.ibd
+│   │       │   │   ├── teams.frm
+│   │       │   │   ├── teams.ibd
+│   │       │   │   ├── tokens.frm
+│   │       │   │   ├── tokens.ibd
+│   │       │   │   ├── topics.frm
+│   │       │   │   ├── topics.ibd
+│   │       │   │   ├── tracking.frm
+│   │       │   │   ├── tracking.ibd
+│   │       │   │   ├── unlocks.frm
+│   │       │   │   ├── unlocks.ibd
+│   │       │   │   ├── users.frm
+│   │       │   │   └── users.ibd
+│   │       │   ├── ddl_recovery-backup.log
+│   │       │   ├── ddl_recovery.log
+│   │       │   ├── ib_buffer_pool
+│   │       │   ├── ibdata1
+│   │       │   ├── ib_logfile0
+│   │       │   ├── ibtmp1
+│   │       │   ├── multi-master.info
+│   │       │   ├── .my-healthcheck.cnf
+│   │       │   ├── mysql
+│   │       │   │   ├── columns_priv.frm
+│   │       │   │   ├── columns_priv.MAD
+│   │       │   │   ├── columns_priv.MAI
+│   │       │   │   ├── column_stats.frm
+│   │       │   │   ├── column_stats.MAD
+│   │       │   │   ├── column_stats.MAI
+│   │       │   │   ├── db.frm
+│   │       │   │   ├── db.MAD
+│   │       │   │   ├── db.MAI
+│   │       │   │   ├── db.opt
+│   │       │   │   ├── event.frm
+│   │       │   │   ├── event.MAD
+│   │       │   │   ├── event.MAI
+│   │       │   │   ├── func.frm
+│   │       │   │   ├── func.MAD
+│   │       │   │   ├── func.MAI
+│   │       │   │   ├── general_log.CSM
+│   │       │   │   ├── general_log.CSV
+│   │       │   │   ├── general_log.frm
+│   │       │   │   ├── global_priv.frm
+│   │       │   │   ├── global_priv.MAD
+│   │       │   │   ├── global_priv.MAI
+│   │       │   │   ├── gtid_slave_pos.frm
+│   │       │   │   ├── gtid_slave_pos.ibd
+│   │       │   │   ├── help_category.frm
+│   │       │   │   ├── help_category.MAD
+│   │       │   │   ├── help_category.MAI
+│   │       │   │   ├── help_keyword.frm
+│   │       │   │   ├── help_keyword.MAD
+│   │       │   │   ├── help_keyword.MAI
+│   │       │   │   ├── help_relation.frm
+│   │       │   │   ├── help_relation.MAD
+│   │       │   │   ├── help_relation.MAI
+│   │       │   │   ├── help_topic.frm
+│   │       │   │   ├── help_topic.MAD
+│   │       │   │   ├── help_topic.MAI
+│   │       │   │   ├── index_stats.frm
+│   │       │   │   ├── index_stats.MAD
+│   │       │   │   ├── index_stats.MAI
+│   │       │   │   ├── innodb_index_stats.frm
+│   │       │   │   ├── innodb_index_stats.ibd
+│   │       │   │   ├── innodb_table_stats.frm
+│   │       │   │   ├── innodb_table_stats.ibd
+│   │       │   │   ├── plugin.frm
+│   │       │   │   ├── plugin.MAD
+│   │       │   │   ├── plugin.MAI
+│   │       │   │   ├── proc.frm
+│   │       │   │   ├── proc.MAD
+│   │       │   │   ├── proc.MAI
+│   │       │   │   ├── procs_priv.frm
+│   │       │   │   ├── procs_priv.MAD
+│   │       │   │   ├── procs_priv.MAI
+│   │       │   │   ├── proxies_priv.frm
+│   │       │   │   ├── proxies_priv.MAD
+│   │       │   │   ├── proxies_priv.MAI
+│   │       │   │   ├── roles_mapping.frm
+│   │       │   │   ├── roles_mapping.MAD
+│   │       │   │   ├── roles_mapping.MAI
+│   │       │   │   ├── servers.frm
+│   │       │   │   ├── servers.MAD
+│   │       │   │   ├── servers.MAI
+│   │       │   │   ├── slow_log.CSM
+│   │       │   │   ├── slow_log.CSV
+│   │       │   │   ├── slow_log.frm
+│   │       │   │   ├── tables_priv.frm
+│   │       │   │   ├── tables_priv.MAD
+│   │       │   │   ├── tables_priv.MAI
+│   │       │   │   ├── table_stats.frm
+│   │       │   │   ├── table_stats.MAD
+│   │       │   │   ├── table_stats.MAI
+│   │       │   │   ├── time_zone.frm
+│   │       │   │   ├── time_zone_leap_second.frm
+│   │       │   │   ├── time_zone_leap_second.MAD
+│   │       │   │   ├── time_zone_leap_second.MAI
+│   │       │   │   ├── time_zone.MAD
+│   │       │   │   ├── time_zone.MAI
+│   │       │   │   ├── time_zone_name.frm
+│   │       │   │   ├── time_zone_name.MAD
+│   │       │   │   ├── time_zone_name.MAI
+│   │       │   │   ├── time_zone_transition.frm
+│   │       │   │   ├── time_zone_transition.MAD
+│   │       │   │   ├── time_zone_transition.MAI
+│   │       │   │   ├── time_zone_transition_type.frm
+│   │       │   │   ├── time_zone_transition_type.MAD
+│   │       │   │   ├── time_zone_transition_type.MAI
+│   │       │   │   ├── transaction_registry.frm
+│   │       │   │   ├── transaction_registry.ibd
+│   │       │   │   └── user.frm
+│   │       │   ├── mysql_upgrade_info
+│   │       │   ├── performance_schema
+│   │       │   │   └── db.opt
+│   │       │   └── sys
+│   │       │       ├── db.opt
+│   │       │       ├── host_summary_by_file_io.frm
+│   │       │       ├── host_summary_by_file_io_type.frm
+│   │       │       ├── host_summary_by_stages.frm
+│   │       │       ├── host_summary_by_statement_latency.frm
+│   │       │       ├── host_summary_by_statement_type.frm
+│   │       │       ├── host_summary.frm
+│   │       │       ├── innodb_buffer_stats_by_schema.frm
+│   │       │       ├── innodb_buffer_stats_by_table.frm
+│   │       │       ├── innodb_lock_waits.frm
+│   │       │       ├── io_by_thread_by_latency.frm
+│   │       │       ├── io_global_by_file_by_bytes.frm
+│   │       │       ├── io_global_by_file_by_latency.frm
+│   │       │       ├── io_global_by_wait_by_bytes.frm
+│   │       │       ├── io_global_by_wait_by_latency.frm
+│   │       │       ├── latest_file_io.frm
+│   │       │       ├── memory_by_host_by_current_bytes.frm
+│   │       │       ├── memory_by_thread_by_current_bytes.frm
+│   │       │       ├── memory_by_user_by_current_bytes.frm
+│   │       │       ├── memory_global_by_current_bytes.frm
+│   │       │       ├── memory_global_total.frm
+│   │       │       ├── metrics.frm
+│   │       │       ├── processlist.frm
+│   │       │       ├── ps_check_lost_instrumentation.frm
+│   │       │       ├── schema_auto_increment_columns.frm
+│   │       │       ├── schema_index_statistics.frm
+│   │       │       ├── schema_object_overview.frm
+│   │       │       ├── schema_redundant_indexes.frm
+│   │       │       ├── schema_table_lock_waits.frm
+│   │       │       ├── schema_table_statistics.frm
+│   │       │       ├── schema_table_statistics_with_buffer.frm
+│   │       │       ├── schema_tables_with_full_table_scans.frm
+│   │       │       ├── schema_unused_indexes.frm
+│   │       │       ├── session.frm
+│   │       │       ├── session_ssl_status.frm
+│   │       │       ├── statement_analysis.frm
+│   │       │       ├── statements_with_errors_or_warnings.frm
+│   │       │       ├── statements_with_full_table_scans.frm
+│   │       │       ├── statements_with_runtimes_in_95th_percentile.frm
+│   │       │       ├── statements_with_sorting.frm
+│   │       │       ├── statements_with_temp_tables.frm
+│   │       │       ├── sys_config.frm
+│   │       │       ├── sys_config.MAD
+│   │       │       ├── sys_config.MAI
+│   │       │       ├── user_summary_by_file_io.frm
+│   │       │       ├── user_summary_by_file_io_type.frm
+│   │       │       ├── user_summary_by_stages.frm
+│   │       │       ├── user_summary_by_statement_latency.frm
+│   │       │       ├── user_summary_by_statement_type.frm
+│   │       │       ├── user_summary.frm
+│   │       │       ├── version.frm
+│   │       │       ├── wait_classes_global_by_avg_latency.frm
+│   │       │       ├── wait_classes_global_by_latency.frm
+│   │       │       ├── waits_by_host_by_latency.frm
+│   │       │       ├── waits_by_user_by_latency.frm
+│   │       │       ├── waits_global_by_latency.frm
+│   │       │       ├── x@0024host_summary_by_file_io.frm
+│   │       │       ├── x@0024host_summary_by_file_io_type.frm
+│   │       │       ├── x@0024host_summary_by_stages.frm
+│   │       │       ├── x@0024host_summary_by_statement_latency.frm
+│   │       │       ├── x@0024host_summary_by_statement_type.frm
+│   │       │       ├── x@0024host_summary.frm
+│   │       │       ├── x@0024innodb_buffer_stats_by_schema.frm
+│   │       │       ├── x@0024innodb_buffer_stats_by_table.frm
+│   │       │       ├── x@0024innodb_lock_waits.frm
+│   │       │       ├── x@0024io_by_thread_by_latency.frm
+│   │       │       ├── x@0024io_global_by_file_by_bytes.frm
+│   │       │       ├── x@0024io_global_by_file_by_latency.frm
+│   │       │       ├── x@0024io_global_by_wait_by_bytes.frm
+│   │       │       ├── x@0024io_global_by_wait_by_latency.frm
+│   │       │       ├── x@0024latest_file_io.frm
+│   │       │       ├── x@0024memory_by_host_by_current_bytes.frm
+│   │       │       ├── x@0024memory_by_thread_by_current_bytes.frm
+│   │       │       ├── x@0024memory_by_user_by_current_bytes.frm
+│   │       │       ├── x@0024memory_global_by_current_bytes.frm
+│   │       │       ├── x@0024memory_global_total.frm
+│   │       │       ├── x@0024processlist.frm
+│   │       │       ├── x@0024ps_digest_95th_percentile_by_avg_us.frm
+│   │       │       ├── x@0024ps_digest_avg_latency_distribution.frm
+│   │       │       ├── x@0024ps_schema_table_statistics_io.frm
+│   │       │       ├── x@0024schema_flattened_keys.frm
+│   │       │       ├── x@0024schema_index_statistics.frm
+│   │       │       ├── x@0024schema_table_lock_waits.frm
+│   │       │       ├── x@0024schema_table_statistics.frm
+│   │       │       ├── x@0024schema_table_statistics_with_buffer.frm
+│   │       │       ├── x@0024schema_tables_with_full_table_scans.frm
+│   │       │       ├── x@0024session.frm
+│   │       │       ├── x@0024statement_analysis.frm
+│   │       │       ├── x@0024statements_with_errors_or_warnings.frm
+│   │       │       ├── x@0024statements_with_full_table_scans.frm
+│   │       │       ├── x@0024statements_with_runtimes_in_95th_percentile.frm
+│   │       │       ├── x@0024statements_with_sorting.frm
+│   │       │       ├── x@0024statements_with_temp_tables.frm
+│   │       │       ├── x@0024user_summary_by_file_io.frm
+│   │       │       ├── x@0024user_summary_by_file_io_type.frm
+│   │       │       ├── x@0024user_summary_by_stages.frm
+│   │       │       ├── x@0024user_summary_by_statement_latency.frm
+│   │       │       ├── x@0024user_summary_by_statement_type.frm
+│   │       │       ├── x@0024user_summary.frm
+│   │       │       ├── x@0024wait_classes_global_by_avg_latency.frm
+│   │       │       ├── x@0024wait_classes_global_by_latency.frm
+│   │       │       ├── x@0024waits_by_host_by_latency.frm
+│   │       │       ├── x@0024waits_by_user_by_latency.frm
+│   │       │       └── x@0024waits_global_by_latency.frm
+│   │       └── redis
+│   │           └── dump.rdb
+│   ├── ctf-alt-config
+│   │   ├── conf
+│   │   │   └── nginx
+│   │   │       ├── http-alt.conf
+│   │   │       └── http-alt.conf.bak
+│   │   ├── .data
+│   │   │   ├── CTFd-alt
+│   │   │   │   ├── logs
+│   │   │   │   │   ├── logins.log
+│   │   │   │   │   ├── registrations.log
+│   │   │   │   │   └── submissions.log
+│   │   │   │   └── uploads
+│   │   │   │       ├── 1045b1be7a0cde5988d53841f1221da2
+│   │   │   │       │   └── Buc.png
+│   │   │   │       ├── 27798ade094ea55706592dbba128ec62
+│   │   │   │       │   └── BucHead.jpg
+│   │   │   │       ├── 4a3768595238d7f63d2bd88892bef225
+│   │   │   │       │   └── rbrbanner.png
+│   │   │   │       ├── edfb820d205bc5f225973cf2303cf86b
+│   │   │   │       │   └── Declaration_of_Independence.png
+│   │   │   │       ├── fc1494918215bdb91bdc039134755662
+│   │   │   │       │   └── Banner-Transparent.svg
+│   │   │   │       └── fe025d459ea823ba336d233cc36cce39
+│   │   │   │           └── Banner-Transparent.svg
+│   │   │   ├── mysql-alt
+│   │   │   │   ├── aria_log.00000001
+│   │   │   │   ├── aria_log_control
+│   │   │   │   ├── ctfdalt  [error opening dir]
+│   │   │   │   ├── ddl_recovery.log
+│   │   │   │   ├── ib_buffer_pool
+│   │   │   │   ├── ibdata1
+│   │   │   │   ├── ib_logfile0
+│   │   │   │   ├── ibtmp1
+│   │   │   │   ├── multi-master.info
+│   │   │   │   ├── .my-healthcheck.cnf
+│   │   │   │   ├── mysql  [error opening dir]
+│   │   │   │   ├── mysql_upgrade_info
+│   │   │   │   ├── performance_schema  [error opening dir]
+│   │   │   │   └── sys  [error opening dir]
+│   │   │   └── redis-alt
+│   │   │       └── dump.rdb
+│   │   ├── digitalforensics-docker-compose.yaml.old
+│   │   └── docker-compose.yml
+│   ├── ctf-config
+│   │   ├── conf
+│   │   │   └── nginx
+│   │   │       └── http.conf
+│   │   ├── .data
+│   │   │   ├── CTFd
+│   │   │   │   ├── logs
+│   │   │   │   │   ├── logins.log
+│   │   │   │   │   ├── registrations.log
+│   │   │   │   │   └── submissions.log
+│   │   │   │   └── uploads
+│   │   │   ├── mysql
+│   │   │   │   ├── aria_log.00000001
+│   │   │   │   ├── aria_log_control
+│   │   │   │   ├── ctfd  [error opening dir]
+│   │   │   │   ├── ddl_recovery.log
+│   │   │   │   ├── ib_buffer_pool
+│   │   │   │   ├── ibdata1
+│   │   │   │   ├── ib_logfile0
+│   │   │   │   ├── ibtmp1
+│   │   │   │   ├── multi-master.info
+│   │   │   │   ├── .my-healthcheck.cnf
+│   │   │   │   ├── mysql  [error opening dir]
+│   │   │   │   ├── mysql_upgrade_info
+│   │   │   │   ├── performance_schema  [error opening dir]
+│   │   │   │   └── sys  [error opening dir]
+│   │   │   └── redis
+│   │   │       └── dump.rdb
+│   │   └── docker-compose.yaml
+│   ├── .data
+│   │   ├── CTFd
+│   │   │   ├── logs
+│   │   │   │   ├── logins.log
+│   │   │   │   ├── registrations.log
+│   │   │   │   └── submissions.log
+│   │   │   └── uploads
+│   │   │       ├── 7b2060ae7d76ad35ec1f7b5eba2e234d
+│   │   │       │   └── Logo.svg
+│   │   │       └── a1020979994389e3718b3d0a8b059837
+│   │   │           └── BucHead.jpg
+│   │   ├── CTFd-alt
+│   │   ├── mysql
+│   │   │   ├── aria_log.00000001
+│   │   │   ├── aria_log_control
+│   │   │   ├── ctfd  [error opening dir]
+│   │   │   ├── ddl_recovery-backup.log
+│   │   │   ├── ib_buffer_pool
+│   │   │   ├── ibdata1
+│   │   │   ├── ib_logfile0
+│   │   │   ├── multi-master.info
+│   │   │   ├── .my-healthcheck.cnf
+│   │   │   ├── mysql  [error opening dir]
+│   │   │   ├── mysql_upgrade_info
+│   │   │   ├── performance_schema  [error opening dir]
+│   │   │   └── sys  [error opening dir]
+│   │   └── redis
+│   │       └── dump.rdb
+│   ├── docker-entrypoint.sh
+│   └── output.txt
+├── .ssh
+│   ├── known_hosts
+│   └── known_hosts.old
+├── .sudo_as_admin_successful
+├── Templates
+├── Videos
+└── .xsession-errors
 
-60 directories, 316 files
+179 directories, 460 files
