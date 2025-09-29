@@ -1,0 +1,62 @@
+services:
+  ctfd-alt:
+    image: ctfd/ctfd
+    user: root
+    restart: always
+    ports:
+      - "8888:8000"
+    environment:
+      - UPLOAD_FOLDER=/var/uploads
+      - DATABASE_URL=mysql+pymysql://ctfdalt:ctfdalt@db-alt/ctfdalt
+      - REDIS_URL=redis://cache-alt:6379
+      - WORKERS=1
+      - LOG_FOLDER=/var/log/CTFd
+      - ACCESS_LOG=-
+      - ERROR_LOG=-
+      - REVERSE_PROXY=true
+    volumes:
+      - .data/CTFd-alt/logs:/var/log/CTFd
+      - .data/CTFd-alt/uploads:/var/uploads
+    depends_on:
+      - db-alt
+    networks:
+      default:
+      internal:
+
+  nginx-alt:
+    image: nginx:stable
+    restart: always
+    volumes:
+      - ./conf/nginx/http-alt.conf:/etc/nginx/nginx.conf
+    ports:
+      - 8880:80
+    depends_on:
+      - ctfd-alt
+
+  db-alt:
+    image: mariadb:10.11
+    restart: always
+    environment:
+      - MARIADB_ROOT_PASSWORD=ctfdalt
+      - MARIADB_USER=ctfdalt
+      - MARIADB_PASSWORD=ctfdalt
+      - MARIADB_DATABASE=ctfdalt
+      - MARIADB_AUTO_UPGRADE=1
+    volumes:
+      - .data/mysql-alt:/var/lib/mysql
+    networks:
+      internal:
+    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]
+
+  cache-alt:
+    image: redis:4
+    restart: always
+    volumes:
+      - .data/redis-alt:/data
+    networks:
+      internal:
+
+networks:
+  default:
+  internal:
+    internal: true
